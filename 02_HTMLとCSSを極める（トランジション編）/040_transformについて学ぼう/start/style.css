@@ -2,6 +2,8 @@
   width: 100px;
   height: 100px;
   margin: 0 auto;
-  background-color: orangered;
+  background-color: red;
+  transform: scale(2, 1.1);
+  transform-origin: center center;
 }
 /*# sourceMappingURL=style.css.map */

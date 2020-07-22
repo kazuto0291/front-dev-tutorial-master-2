@@ -8,3 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
 window.addEventListener("load", function () {
     load.classList.add('done');
 });
+
+
+// document.addEventListener("load", function () {
+//     load.classList.add('done');
+// });
