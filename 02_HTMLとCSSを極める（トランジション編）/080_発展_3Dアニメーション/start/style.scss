@@ -17,10 +17,15 @@ $cBlack: black;
 
   &.cover-3d {
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
     z-index: 1;
     transform-style: preserve-3d;
     perspective: 300px;
+
+    & span {
+      display: inline-block;
+      transform: translateZ(20px);
+    }
 
     &::before {
       content: '';
@@ -31,10 +36,11 @@ $cBlack: black;
       position: absolute;
       top: 0;
       left: 0;
-      transform: rotateX(-90deg);
-      transition: transform 0.3s;
+      transform: rotateX(90deg);
+      transition: all 0.3s;
       transform-origin: top center;
-      z-index: -1;
+      // z-index: -1;
+      opacity: 0;
     }
 
     &:hover {
@@ -42,6 +48,8 @@ $cBlack: black;
 
       &::before {
         transform: none;
+        opacity: 1;
+
       }
     }
   }
